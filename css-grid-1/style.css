@@ -1,0 +1,30 @@
+.container{
+    background-color: red;
+    /* width:700px; */
+    height:900px;
+    display:grid;
+    /* grid-template-rows: 133px 133px 133px;
+    grid-template-columns: 133px 133px 133px; */
+
+    /* Instead of the above css use repeate and fr unit 
+       1fr means 1 fraction of the entire width available    
+    */
+
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 12px;
+    column-gap: 12px;
+}
+
+.item{
+background-color: black;
+/* width: 122px;
+height:122px */
+}
+
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
