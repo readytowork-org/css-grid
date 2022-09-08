@@ -21,7 +21,12 @@
     grid-template-rows: 60px 1fr 60px;
     row-gap: 12px;
     column-gap: 12px;
-}
+    /* justify-items: center;
+    justify-items: start;
+    justify-items: end; */
+
+
+ }
 
 .item{
 background-color: burlywood;
@@ -30,8 +35,20 @@ height:122px */
 }
 
 .item1{
-    grid-column-start: 1;
-    grid-column-end: 4;
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+
+    /* Another way of spanning the columns */
+    grid-column: 1 / span 3;
+}
+
+.item2{
+    /*Justify-items work on grid containers and justify-self works on grid items*/
+    /* justify-self: center;
+    align-self:center; */
+    
+    /*place-self centers both justiy and align type property*/
+    place-self: center;
 }
 
 .footer{
