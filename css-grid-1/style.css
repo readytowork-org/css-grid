@@ -1,7 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .container{
-    background-color: red;
+    /* background-color: red; */
     /* width:700px; */
-    height:900px;
+    /* height:700px; */
     display:grid;
     /* grid-template-rows: 133px 133px 133px;
     grid-template-columns: 133px 133px 133px; */
@@ -13,18 +18,23 @@
     /* grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr); */
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 60px 1fr 60px;
     row-gap: 12px;
     column-gap: 12px;
 }
 
 .item{
-background-color: black;
+background-color: burlywood;
 /* width: 122px;
 height:122px */
 }
 
 .item1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.footer{
     grid-column-start: 1;
     grid-column-end: 4;
 }
